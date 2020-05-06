@@ -1,0 +1,46 @@
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+use_xft yes
+xftfont Zekton:size=9
+override_utf8_locale yes
+text_buffer_size 2048
+own_window_class Conky
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+alignment bl
+gap_x 1020
+gap_y 200
+minimum_size 350 500
+default_bar_size 30 8
+draw_shades no
+default_color ffffff
+default_shade_color 000000
+color0 0090ff
+color1 ffffff
+color2 ffffff
+
+
+
+lua_load ~/.conky/LSD_4/lsd_rings.lua
+lua_draw_hook_post main
+
+TEXT
+${goto 205}${voffset -8}${color0}${font Zekton:style=bold:size=12}${exec echo ${USER}}
+${goto 60}${voffset 30}${color}${font}Temperature: 
+${goto 10}${voffset 70}${font Zekton:style=bold:size=30}${time %H:%M}${font}
+${goto 182}${voffset 20}${font Zekton:style=Bold:size=9}Battery
+${alignr 135}${font Zekton:style=Bold:size=9}${battery_percent BAT1}%
+${alignr 135}${font zekton:style=Bold:size=9}${battery_percent BAT2}%
+${alignr 252}${voffset 44}${font zekton:style=Bold:size=6}${cpu cpu0}%${goto 138}${voffset -8}${color}${font Zekton:style=Bold:size=9}RAM
+${goto 72}CPU${alignr 190}${font Zekton:style=Bold:size=9}${memperc}%
+${goto 80}${voffset 32}${font Zekton:style=Bold:size=9}HDused
+${goto 80}${font Zekton:style=Bold:size=9}${fs_used /home}
+
+${image /home/charley/.conky/lsd.png -p 0,0 -s 300x467}

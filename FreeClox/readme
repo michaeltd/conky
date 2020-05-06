@@ -1,0 +1,33 @@
+# FreeClox Date and Time - The FR Freebox clock conky
+# Author : Spyrou
+# History Release :
+# v1.0 - First Release
+# this file is FREE to redistribute
+# Font included :
+## True Type Font: Square Sans Serif 7 version 1.0
+## See Readme.txt included for details. The font Square Sans Serif 7 is freeware. You may use it for commercial purposes (see 'NOTES' section).
+## AUTHOR = Sizenko Alexander - November 20 2014
+# Wallpaper included : genuine abstract
+## http://www.hdwallpapers.in/genuine_abstract-wallpapers.html
+#Tags : Customization Linux conky
+
+Simple to install thanks to Conky Manager (teejeetech)
+If you already have Conky Manager installed
+unzip and put fresh look folder in 
+ ~/conky-manager/themes/
+
+make sure to install Fonts.
+
+Refresh and load up.
+
+
+Conky Manager
+http://teejeetech.blogspot.com.au/p/conky-manager.html
+
+On Arch Linux :
+yaourt -a conky-manager
+
+On Ubuntu :
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install conky-manager

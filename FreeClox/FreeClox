@@ -1,0 +1,88 @@
+# FreeClox Date and Time - The FR Freebox clock conky
+# Author : Spyrou
+# History Release :
+# v1.0 - First Release
+# this file is FREE to redistribute
+# Font included :
+## True Type Font: Square Sans Serif 7 version 1.0
+## See Readme.txt included for details. The font Square Sans Serif 7 is freeware. You may use it for commercial purposes (see 'NOTES' section).
+## AUTHOR = Sizenko Alexander - November 20 2014
+# Wallpaper included : genuine abstract
+## http://www.hdwallpapers.in/genuine_abstract-wallpapers.html
+#Tags : Customization Linux conky
+
+
+# Conky settings
+# set to yes if you want Conky to be forked in the background
+background no
+update_interval 1.0
+
+override_utf8_locale yes
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+# Subtract file system buffers from used memory?
+no_buffers yes
+out_to_console no
+out_to_stderr no
+
+text_buffer_size 2048
+
+# Window specifications
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_class Conky
+own_window_type desktop # allow to be part of the desktop background : Do not minimize on Show Desktop + icons over conky
+own_window_transparent yes
+own_window_hints undecorate,below,sticky,skip_taskbar,skip_pager
+
+border_inner_margin 0
+border_outer_margin 0
+
+# Text alignment, other possible values are commented
+alignment top_right
+#alignment top_left
+#alignment bottom_left
+#alignment bottom_right
+
+minimum_size 450 10
+maximum_width 450
+
+# Gap between borders of screen and text
+gap_x 20
+gap_y 360
+
+
+# Graphics settings
+draw_shades no
+# Draw outlines?
+draw_outline no
+# Draw borders around text
+draw_borders no
+draw_graph_borders no
+# border_width 0
+
+# Text settings
+use_xft yes
+xftalpha 0
+text_buffer_size 2048
+xftfont Square Sans Serif 7,:size=20
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# Default colors and also border colors
+default_color 800058 # Hexa, or name, ex : white
+# default_shade_color white
+# default_outline_color white
+color1     a8028e # Purple
+# color1     FF7D00 # Orange
+# color1     AC0000 # Red
+color2     969696
+color3     E6E6E6
+
+TEXT
+${alignr 200}${voffset 50}${font Square Sans Serif 7,:size=20}${color2}${time %A}${voffset -20}
+${alignr 200}${voffset 20}${font Square Sans Serif 7,:size=20}${color3}${time %b} ${time %e}${voffset -20}
+${alignr 200}${voffset 30}${font Square Sans Serif 7,:size=20}${color1}${time %S}${voffset -20}
+${offset 260}${voffset -130}${font Square Sans Serif 7,:size=80}${color1}${time %H}${voffset -20}
+${offset 260}${voffset -22}${font Square Sans Serif 7,:size=80}${color1}${time %M}${voffset -170}

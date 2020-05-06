@@ -1,0 +1,101 @@
+conky.config = {
+   -- FreeClox Date and Time - The FR Freebox clock conky
+   -- Author : Spyrou
+   -- History Release :
+   -- v1.0 - First Release
+   -- this file is FREE to redistribute
+   -- Font included :
+   --# True Type Font: Square Sans Serif 7 version 1.0
+   --# See Readme.txt included for details. The font Square Sans Serif 7 is freeware. You may use it for commercial purposes (see 'NOTES' section).
+   --# AUTHOR = Sizenko Alexander - November 20 2014
+   -- Wallpaper included : genuine abstract
+   --# http://www.hdwallpapers.in/genuine_abstract-wallpapers.html
+   --Tags : Customization Linux conky
+
+
+   -- Conky settings
+   -- set to yes if you want Conky to be forked in the background
+   background = yes,
+   update_interval = 1.0,
+
+   override_utf8_locale = true,
+
+   -- Use double buffering (reduces flicker, may not work for everyone)
+   double_buffer = true,
+   -- Subtract file system buffers from used memory?
+   no_buffers = true,
+   out_to_console = false,
+   out_to_stderr = false,
+
+   text_buffer_size = 2048,
+
+   -- Window specifications
+   -- Create own window instead of using desktop (required in nautilus)
+   own_window = true,
+   own_window_class = 'conky',
+   -- own_window_type = 'desktop',
+   -- own_window_type = 'panel',
+   -- own_window_type = 'dock', -- e16
+   -- own_window_type = 'normal',
+   own_window_type = 'override', -- mwm, wmaker, openbox
+   own_window_transparent = true,
+   own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+   own_window_argb_visual = true,
+   own_window_argb_value = 0,
+
+   border_inner_margin = 0,
+   border_outer_margin = 0,
+
+   -- Text alignment, other possible values are commented
+   alignment = 'top_right',
+   --alignment top_left
+   --alignment bottom_left
+   --alignment bottom_right
+
+   minimum_width = 450, minimum_height = 10,
+   maximum_width = 450,
+
+   -- Gap between borders of screen and text
+   gap_x = 64,
+   gap_y = 64,
+
+
+   -- Graphics settings
+   draw_shades = false,
+   -- Draw outlines?
+   draw_outline = false,
+   -- Draw borders around text
+   draw_borders = false,
+   draw_graph_borders = false,
+   -- border_width 0
+
+   -- Text settings
+   use_xft = true,
+   xftalpha = 0,
+   text_buffer_size = 2048,
+   font = 'Square Sans Serif 7,:size=20',
+   -- set to yes if you want all text to be in uppercase
+   uppercase = false,
+
+   -- Default colors and also border colors
+   default_color = '#800058',-- Hexa, or name, ex : white
+   -- default_shade_color white
+   -- default_outline_color white
+   color1 = '#a8028e', -- # Purple
+   -- color1 = '#FF7D00', -- # Orange
+   -- color1 = '#AC0000', -- # Red
+   -- color1 = '#6D1D31', -- # Dark Red
+
+   color2 = '#969696',
+   color3 = '#E6E6E6',
+
+};
+
+conky.text = [[
+${alignr 200}${voffset 50}${font Square Sans Serif 7,:size=20}${color2}${time %A}${voffset -20}
+${alignr 200}${voffset 20}${font Square Sans Serif 7,:size=20}${color3}${time %b} ${time %e}${voffset -20}
+${alignr 200}${voffset 30}${font Square Sans Serif 7,:size=20}${color1}${time %S}${voffset -20}
+${offset 260}${voffset -130}${font Square Sans Serif 7,:size=80}${color1}${time %H}${voffset -20}
+${offset 260}${voffset -22}${font Square Sans Serif 7,:size=80}${color1}${time %M}${voffset -170}
+]];
+
