@@ -1,2 +1,0 @@
-# conky
-conkyrc for all
