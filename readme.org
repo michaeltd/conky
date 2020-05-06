@@ -3,7 +3,31 @@
 #+date: <2020-05-06 Wed>
 #+html:
 ** What is this...
+   Repo to hold my conky paraphernalia.
 ** Why is this...
+   To share and copy around effortlessly.
 ** Themes ...
-** License ...
+   1) ConkyNeon
+   2) FreeClox
+   3) LSD_4
+   4) Ubuntu-ish
+   5) blackbox
+   6) cronoconky
+   7) min_clock
+   8) minimalism
+   9) qlocktwo
+   10) seamod
+   11) victorconky
 
+** Contributing [[http://unmaintained.tech/][http://unmaintained.tech/badge.svg]]
+   Typos, syntactic and grammar welcome.
+
+   Other than that, can't see why.
+   
+   Just clone and knock your self out :)
+   
+   In the rare case that you *must*, 
+
+   buy me some coffee in [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3THXBFPG9H3YY&source=michaeltd/.emacs.d][\euro]] or [[bitcoin:3KCPkfTWqanYfgNvoUKP1S4bFXTDpaReUs][₿]] (bitcoin:3KCPkfTWqanYfgNvoUKP1S4bFXTDpaReUs).
+
+** [[file:license][License]] [[https://opensource.org/licenses/MIT][https://img.shields.io/badge/License-MIT-yellow.svg]]
